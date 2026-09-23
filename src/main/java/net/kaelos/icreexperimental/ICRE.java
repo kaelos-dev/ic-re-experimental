@@ -1,5 +1,8 @@
 package net.kaelos.icreexperimental;
 
+import net.kaelos.icreexperimental.definitions.ICREBlocks;
+import net.kaelos.icreexperimental.definitions.ICRECreativeModeTabs;
+import net.kaelos.icreexperimental.definitions.ICREItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
@@ -7,5 +10,9 @@ import net.neoforged.fml.common.Mod;
 public class ICRE {
     public static final String MOD_ID = "icre";
 
-    public ICRE(final IEventBus eventBus) {}
+    public ICRE(final IEventBus eventBus) {
+        ICREBlocks.register(eventBus);
+        ICREItems.register(eventBus);
+        ICRECreativeModeTabs.register(eventBus);
+    }
 }
