@@ -1,0 +1,13 @@
+{
+  "item.icre.silver_ingot": "Серебряный слиток",
+  "item.icre.tin_ingot": "Оловянный слиток",
+  "item.icre.lead_ingot": "Свинцовый слиток",
+  "item.icre.bronze_ingot": "Бронзовый слиток",
+
+  "item.icre.silver_plate": "Серебряная пластина",
+  "item.icre.tin_plate": "Оловянная пластина",
+  "item.icre.lead_plate": "Свинцовая пластина",
+  "item.icre.bronze_plate": "Бронзовая пластина",
+
+  "tooltip.icre.durability": "Прочность: %s / %s"
+}

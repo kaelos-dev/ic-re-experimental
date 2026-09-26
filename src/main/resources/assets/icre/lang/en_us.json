@@ -1,0 +1,18 @@
+{
+  "itemGroup.icre.materials": "IC-RE: Materials",
+  "itemGroup.icre.tools": "IC-RE: Tools",
+
+  "item.icre.silver_ingot": "Silver Ingot",
+  "item.icre.tin_ingot": "Tin Ingot",
+  "item.icre.lead_ingot": "Lead Ingot",
+  "item.icre.bronze_ingot": "Bronze Ingot",
+
+  "item.icre.silver_plate": "Silver Plate",
+  "item.icre.tin_plate": "Tin Plate",
+  "item.icre.lead_plate": "Lead Plate",
+  "item.icre.bronze_plate": "Bronze Plate",
+
+  "item.icre.hammer": "Hammer",
+
+  "tooltip.icre.durability": "Durability: %s / %s"
+}
