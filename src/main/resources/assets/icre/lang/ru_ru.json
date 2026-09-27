@@ -3,11 +3,16 @@
   "item.icre.tin_ingot": "Оловянный слиток",
   "item.icre.lead_ingot": "Свинцовый слиток",
   "item.icre.bronze_ingot": "Бронзовый слиток",
+  "item.icre.steel_ingot": "Стальной слиток",
 
-  "item.icre.silver_plate": "Серебряная пластина",
   "item.icre.tin_plate": "Оловянная пластина",
   "item.icre.lead_plate": "Свинцовая пластина",
   "item.icre.bronze_plate": "Бронзовая пластина",
+  "item.icre.steel_plate": "Стальная пластина",
+  "item.icre.iron_plate": "Железная пластина",
+  "item.icre.copper_plate": "Медная пластина",
+  "item.icre.lapis_plate": "Лазуритовая пластина",
+  "item.icre.obsidian_plate": "Обсидиановая пластина",
 
   "tooltip.icre.durability": "Прочность: %s / %s"
 }

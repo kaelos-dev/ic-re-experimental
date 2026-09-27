@@ -6,11 +6,16 @@
   "item.icre.tin_ingot": "Tin Ingot",
   "item.icre.lead_ingot": "Lead Ingot",
   "item.icre.bronze_ingot": "Bronze Ingot",
+  "item.icre.steel_ingot": "Steel Ingot",
 
-  "item.icre.silver_plate": "Silver Plate",
   "item.icre.tin_plate": "Tin Plate",
   "item.icre.lead_plate": "Lead Plate",
   "item.icre.bronze_plate": "Bronze Plate",
+  "item.icre.steel_plate": "Steel Plate",
+  "item.icre.iron_plate": "Iron Plate",
+  "item.icre.copper_plate": "Copper Plate",
+  "item.icre.lapis_plate": "Lapis Lazuli Plate",
+  "item.icre.obsidian_plate": "Obsidian Plate",
 
   "item.icre.hammer": "Hammer",
 
