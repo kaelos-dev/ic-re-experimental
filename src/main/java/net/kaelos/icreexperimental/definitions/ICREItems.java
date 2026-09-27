@@ -15,10 +15,16 @@ public class ICREItems {
     public static final DeferredItem<MaterialItem> TIN_INGOT = ITEMS.register("tin_ingot", MaterialItem::new);
     public static final DeferredItem<MaterialItem> LEAD_INGOT = ITEMS.register("lead_ingot", MaterialItem::new);
     public static final DeferredItem<MaterialItem> BRONZE_INGOT = ITEMS.register("bronze_ingot", MaterialItem::new);
-    public static final DeferredItem<MaterialItem> SILVER_PLATE = ITEMS.register("silver_plate", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> STEEL_INGOT = ITEMS.register("steel_ingot", MaterialItem::new);
+
     public static final DeferredItem<MaterialItem> TIN_PLATE = ITEMS.register("tin_plate", MaterialItem::new);
     public static final DeferredItem<MaterialItem> LEAD_PLATE = ITEMS.register("lead_plate", MaterialItem::new);
     public static final DeferredItem<MaterialItem> BRONZE_PLATE = ITEMS.register("bronze_plate", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> STEEL_PLATE = ITEMS.register("steel_plate", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> IRON_PLATE = ITEMS.register("iron_plate", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> COPPER_PLATE = ITEMS.register("copper_plate", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> LAPIS_PLATE = ITEMS.register("lapis_plate", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> OBSIDIAN_PLATE = ITEMS.register("obsidian_plate", MaterialItem::new);
 
     public static final DeferredItem<ToolItem> HAMMER = ITEMS.register("hammer",
             () -> new ToolItem(80));
