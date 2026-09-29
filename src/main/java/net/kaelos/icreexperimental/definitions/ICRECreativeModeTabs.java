@@ -1,6 +1,8 @@
 package net.kaelos.icreexperimental.definitions;
 
 import net.kaelos.icreexperimental.ICRE;
+import net.kaelos.icreexperimental.block.CableBlock;
+import net.kaelos.icreexperimental.init.IAgricultureComponent;
 import net.kaelos.icreexperimental.item.MaterialItem;
 import net.kaelos.icreexperimental.item.ToolItem;
 import net.minecraft.core.registries.Registries;
@@ -26,6 +28,11 @@ public class ICRECreativeModeTabs {
                                 .map(DeferredHolder::get)
                                 .filter(item -> item instanceof MaterialItem)
                                 .forEach(output::accept);
+
+                        ICREBlocks.BLOCKS.getEntries().stream()
+                                .map(DeferredHolder::get)
+                                .filter(block -> block instanceof CableBlock)
+                                .forEach(output::accept);
                     })).build());
 
     @SuppressWarnings("unused")
@@ -36,6 +43,22 @@ public class ICRECreativeModeTabs {
                         ICREItems.ITEMS.getEntries().stream()
                                 .map(DeferredHolder::get)
                                 .filter(item -> item instanceof ToolItem)
+                                .forEach(output::accept);
+                    })).build());
+
+    @SuppressWarnings("unused")
+    public static Supplier<CreativeModeTab> AGRICULTURE = TABS.register(
+            "agriculture", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ICREBlocks.RUBBER_SAPLING.get()))
+                    .title(Component.translatable("itemGroup." + ICRE.MOD_ID + ".agriculture"))
+                    .displayItems(((itemDisplayParameters, output) -> {
+                        ICREBlocks.BLOCKS.getEntries().stream()
+                                .map(DeferredHolder::get)
+                                .filter(block -> block instanceof IAgricultureComponent)
+                                .forEach(output::accept);
+
+                        ICREItems.ITEMS.getEntries().stream()
+                                .map(DeferredHolder::get)
+                                .filter(item -> item instanceof IAgricultureComponent)
                                 .forEach(output::accept);
                     })).build());
 

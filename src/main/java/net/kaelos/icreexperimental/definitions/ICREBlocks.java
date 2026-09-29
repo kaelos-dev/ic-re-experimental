@@ -4,6 +4,7 @@ import net.kaelos.icreexperimental.ICRE;
 import net.kaelos.icreexperimental.block.CableBlock;
 import net.kaelos.icreexperimental.block.rubber.RubberLeaves;
 import net.kaelos.icreexperimental.block.rubber.RubberLog;
+import net.kaelos.icreexperimental.block.rubber.RubberSapling;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -24,6 +25,7 @@ public class ICREBlocks {
 
     public static final DeferredBlock<RubberLog> RUBBER_LOG = registerBlock("rubber_log", RubberLog::new);
     public static final DeferredBlock<RubberLeaves> RUBBER_LEAVES = registerBlock("rubber_leaves", RubberLeaves::new);
+    public static final DeferredBlock<RubberSapling> RUBBER_SAPLING = registerBlock("rubber_sapling", RubberSapling::new);
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> object = BLOCKS.register(name, block);
