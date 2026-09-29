@@ -1,6 +1,7 @@
 {
   "itemGroup.icre.materials": "IC-RE: Materials",
   "itemGroup.icre.tools": "IC-RE: Tools",
+  "itemGroup.icre.agriculture": "IC-RE: Agriculture",
 
   "item.icre.silver_ingot": "Silver Ingot",
   "item.icre.tin_ingot": "Tin Ingot",
@@ -14,10 +15,21 @@
   "item.icre.steel_plate": "Steel Plate",
   "item.icre.iron_plate": "Iron Plate",
   "item.icre.copper_plate": "Copper Plate",
+  "item.icre.gold_plate": "Gold Plate",
   "item.icre.lapis_plate": "Lapis Lazuli Plate",
   "item.icre.obsidian_plate": "Obsidian Plate",
 
   "item.icre.hammer": "Hammer",
+  "item.icre.cutter": "Cutter",
 
-  "tooltip.icre.durability": "Durability: %s / %s"
+  "block.icre.tin_cable": "Tin Cable",
+  "block.icre.copper_cable": "Copper Cable",
+  "block.icre.gold_cable": "Gold Cable",
+  "block.icre.iron_cable": "Iron Cable",
+
+  "block.icre.rubber_log": "Rubber Log",
+  "block.icre.rubber_leaves": "Rubber Leaves",
+  "block.icre.rubber_sapling": "Rubber Sapling",
+
+  "tooltip.icre.uses": "Uses: %s / %s"
 }

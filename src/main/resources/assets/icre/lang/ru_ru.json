@@ -11,8 +11,21 @@
   "item.icre.steel_plate": "Стальная пластина",
   "item.icre.iron_plate": "Железная пластина",
   "item.icre.copper_plate": "Медная пластина",
+  "item.icre.gold_plate": "Золотая пластина",
   "item.icre.lapis_plate": "Лазуритовая пластина",
   "item.icre.obsidian_plate": "Обсидиановая пластина",
 
-  "tooltip.icre.durability": "Прочность: %s / %s"
+  "item.icre.hammer": "Молот",
+  "item.icre.cutter": "Кусачки",
+
+  "block.icre.tin_cable": "Оловянный провод",
+  "block.icre.copper_cable": "Медный провод",
+  "block.icre.gold_cable": "Золотой провод",
+  "block.icre.iron_cable": "Железный провод",
+
+  "block.icre.rubber_log": "Бревно гевеи",
+  "block.icre.rubber_leaves": "Листья гевеи",
+  "block.icre.rubber_sapling": "Саженец гевеи",
+
+  "tooltip.icre.uses": "Использований: %s / %s"
 }
