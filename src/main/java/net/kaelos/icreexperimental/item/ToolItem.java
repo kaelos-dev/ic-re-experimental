@@ -34,7 +34,7 @@ public class ToolItem extends Item {
         int currentDurability = maxDamage - stack.getDamageValue();
 
         tooltipComponents.add(
-                Component.translatable("tooltip." + ICRE.MOD_ID + ".durability", currentDurability, maxDamage)
+                Component.translatable("tooltip." + ICRE.MOD_ID + ".uses", currentDurability, maxDamage)
                         .withStyle(ChatFormatting.GRAY)
         );
 
