@@ -1,5 +1,6 @@
 package net.kaelos.icreexperimental.datagen;
 
+import net.kaelos.icreexperimental.definitions.ICREBlocks;
 import net.kaelos.icreexperimental.definitions.ICREItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -25,6 +26,11 @@ public class ICRERecipeProvider extends RecipeProvider {
         hammerRecipe(ICREItems.BRONZE_INGOT.get(), ICREItems.BRONZE_PLATE.get(), output);
         hammerRecipe(Items.IRON_INGOT, ICREItems.IRON_PLATE.get(), output);
         hammerRecipe(Items.COPPER_INGOT, ICREItems.COPPER_PLATE.get(), output);
+        hammerRecipe(Items.GOLD_INGOT, ICREItems.GOLD_PLATE.get(), output);
+
+        cutterRecipe(ICREItems.TIN_PLATE.get(), ICREBlocks.TIN_CABLE.get().asItem(), 3, output);
+        cutterRecipe(ICREItems.COPPER_PLATE.get(), ICREBlocks.COPPER_CABLE.get().asItem(), 2, output);
+        cutterRecipe(ICREItems.GOLD_PLATE.get(), ICREBlocks.GOLD_CABLE.get().asItem(), 4, output);
     }
 
     private void hammerRecipe(Item input, Item output, RecipeOutput recipeOutput) {
@@ -32,6 +38,14 @@ public class ICRERecipeProvider extends RecipeProvider {
                 .requires(ICREItems.HAMMER.get())
                 .requires(input)
                 .unlockedBy("has_hammer", has(ICREItems.HAMMER.get()))
+                .save(recipeOutput);
+    }
+
+    private void cutterRecipe(Item input, Item output, int count, RecipeOutput recipeOutput) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count)
+                .requires(ICREItems.CUTTER.get())
+                .requires(input)
+                .unlockedBy("has_cutting", has(ICREItems.CUTTER.get()))
                 .save(recipeOutput);
     }
 }

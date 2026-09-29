@@ -3,6 +3,7 @@ package net.kaelos.icreexperimental;
 import net.kaelos.icreexperimental.definitions.ICREBlocks;
 import net.kaelos.icreexperimental.definitions.ICRECreativeModeTabs;
 import net.kaelos.icreexperimental.definitions.ICREItems;
+import net.kaelos.icreexperimental.definitions.ICREPlacerTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -19,5 +20,6 @@ public class ICRE {
         ICREBlocks.register(eventBus);
         ICREItems.register(eventBus);
         ICRECreativeModeTabs.register(eventBus);
+        ICREPlacerTypes.register(eventBus);
     }
 }
