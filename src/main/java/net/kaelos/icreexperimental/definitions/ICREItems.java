@@ -3,6 +3,7 @@ package net.kaelos.icreexperimental.definitions;
 import net.kaelos.icreexperimental.ICRE;
 import net.kaelos.icreexperimental.item.MaterialItem;
 import net.kaelos.icreexperimental.item.ToolItem;
+import net.kaelos.icreexperimental.item.tool.FaucetTool;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -27,10 +28,15 @@ public class ICREItems {
     public static final DeferredItem<MaterialItem> LAPIS_PLATE = ITEMS.register("lapis_plate", MaterialItem::new);
     public static final DeferredItem<MaterialItem> OBSIDIAN_PLATE = ITEMS.register("obsidian_plate", MaterialItem::new);
 
+    public static final DeferredItem<MaterialItem> RESIN = ITEMS.register("resin", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> RUBBER = ITEMS.register("rubber", MaterialItem::new);
+
     public static final DeferredItem<ToolItem> HAMMER = ITEMS.register("hammer",
             () -> new ToolItem(80));
     public static final DeferredItem<ToolItem> CUTTER = ITEMS.register("cutter",
             () -> new ToolItem(60));
+    public static final DeferredItem<FaucetTool> FAUCET = ITEMS.register("faucet",
+            () -> new FaucetTool(16));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
