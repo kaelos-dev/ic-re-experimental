@@ -33,6 +33,9 @@ public class ICRECreativeModeTabs {
                                 .map(DeferredHolder::get)
                                 .filter(block -> block instanceof CableBlock)
                                 .forEach(output::accept);
+
+                        output.accept(ICREItems.RESIN.get());
+                        output.accept(ICREItems.RUBBER.get());
                     })).build());
 
     @SuppressWarnings("unused")

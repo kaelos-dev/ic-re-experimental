@@ -15,8 +15,12 @@
   "item.icre.lapis_plate": "Лазуритовая пластина",
   "item.icre.obsidian_plate": "Обсидиановая пластина",
 
+  "item.icre.resin": "Каучук",
+  "item.icre.rubber": "Резина",
+
   "item.icre.hammer": "Молот",
   "item.icre.cutter": "Кусачки",
+  "item.icre.faucet": "Краник",
 
   "block.icre.tin_cable": "Оловянный провод",
   "block.icre.copper_cable": "Медный провод",

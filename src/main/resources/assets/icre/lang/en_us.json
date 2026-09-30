@@ -19,8 +19,12 @@
   "item.icre.lapis_plate": "Lapis Lazuli Plate",
   "item.icre.obsidian_plate": "Obsidian Plate",
 
+  "item.icre.resin": "Resin",
+  "item.icre.rubber": "Rubber",
+
   "item.icre.hammer": "Hammer",
   "item.icre.cutter": "Cutter",
+  "item.icre.faucet": "Faucet",
 
   "block.icre.tin_cable": "Tin Cable",
   "block.icre.copper_cable": "Copper Cable",

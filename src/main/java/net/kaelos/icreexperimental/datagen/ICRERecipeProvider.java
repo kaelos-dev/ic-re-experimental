@@ -3,13 +3,12 @@ package net.kaelos.icreexperimental.datagen;
 import net.kaelos.icreexperimental.definitions.ICREBlocks;
 import net.kaelos.icreexperimental.definitions.ICREItems;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
@@ -31,6 +30,19 @@ public class ICRERecipeProvider extends RecipeProvider {
         cutterRecipe(ICREItems.TIN_PLATE.get(), ICREBlocks.TIN_CABLE.get().asItem(), 3, output);
         cutterRecipe(ICREItems.COPPER_PLATE.get(), ICREBlocks.COPPER_CABLE.get().asItem(), 2, output);
         cutterRecipe(ICREItems.GOLD_PLATE.get(), ICREBlocks.GOLD_CABLE.get().asItem(), 4, output);
+
+        smeltingRecipe(ICREItems.RESIN.get(), ICREItems.RUBBER.get(), 0.1F, output);
+    }
+
+    private void smeltingRecipe(Item input, Item output, float xp, RecipeOutput recipeOutput) {
+        String nameInputItem = BuiltInRegistries.ITEM.getKey(input).getPath();
+        SimpleCookingRecipeBuilder.smelting(
+                Ingredient.of(input),
+                RecipeCategory.MISC,
+                output,
+                xp,
+                200
+        ).unlockedBy("has_" + nameInputItem, has(input)).save(recipeOutput);
     }
 
     private void hammerRecipe(Item input, Item output, RecipeOutput recipeOutput) {
