@@ -1,0 +1,8 @@
+{
+  "item.faucet.extract": {
+    "category": "players",
+    "sounds": [
+      "icre:rubber_tap"
+    ]
+  }
+}
