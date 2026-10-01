@@ -31,6 +31,9 @@ public class ICREItems {
     public static final DeferredItem<MaterialItem> RESIN = ITEMS.register("resin", MaterialItem::new);
     public static final DeferredItem<MaterialItem> RUBBER = ITEMS.register("rubber", MaterialItem::new);
 
+    public static final DeferredItem<MaterialItem> RAW_TIN = ITEMS.register("raw_tin", MaterialItem::new);
+    public static final DeferredItem<MaterialItem> RAW_LEAD = ITEMS.register("raw_lead", MaterialItem::new);
+
     public static final DeferredItem<ToolItem> HAMMER = ITEMS.register("hammer",
             () -> new ToolItem(80));
     public static final DeferredItem<ToolItem> CUTTER = ITEMS.register("cutter",

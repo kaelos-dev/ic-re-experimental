@@ -19,6 +19,9 @@
   "item.icre.lapis_plate": "Lapis Lazuli Plate",
   "item.icre.obsidian_plate": "Obsidian Plate",
 
+  "item.icre.raw_tin": "Raw Tin",
+  "item.icre.raw_lead": "Raw Lead",
+
   "item.icre.resin": "Resin",
   "item.icre.rubber": "Rubber",
 
@@ -34,6 +37,10 @@
   "block.icre.rubber_log": "Rubber Log",
   "block.icre.rubber_leaves": "Rubber Leaves",
   "block.icre.rubber_sapling": "Rubber Sapling",
+
+  "block.icre.tin_ore": "Tin Ore",
+  "block.icre.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.icre.deepslate_lead_ore": "Deepslate Lead Ore",
 
   "tooltip.icre.uses": "Uses: %s / %s"
 }

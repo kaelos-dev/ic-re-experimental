@@ -15,6 +15,9 @@
   "item.icre.lapis_plate": "Лазуритовая пластина",
   "item.icre.obsidian_plate": "Обсидиановая пластина",
 
+  "item.icre.raw_tin": "Рудное олово",
+  "item.icre.raw_lead": "Рудный свинец",
+
   "item.icre.resin": "Каучук",
   "item.icre.rubber": "Резина",
 
@@ -30,6 +33,10 @@
   "block.icre.rubber_log": "Бревно гевеи",
   "block.icre.rubber_leaves": "Листья гевеи",
   "block.icre.rubber_sapling": "Саженец гевеи",
+
+  "block.icre.tin_ore": "Оловянная руда",
+  "block.icre.deepslate_tin_ore": "Глубинная оловянная руда",
+  "block.icre.deepslate_lead_ore": "Глубинная свинцовая руда",
 
   "tooltip.icre.uses": "Использований: %s / %s"
 }

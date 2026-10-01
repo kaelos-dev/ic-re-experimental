@@ -2,6 +2,7 @@ package net.kaelos.icreexperimental.datagen;
 
 import net.kaelos.icreexperimental.block.CableBlock;
 import net.kaelos.icreexperimental.definitions.ICREBlocks;
+import net.kaelos.icreexperimental.definitions.ICREItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -25,6 +26,13 @@ public class ICREBlockLootProvider extends BlockLootSubProvider {
                 .forEach(this::dropSelf);
 
         createRubber();
+        createOres();
+    }
+
+    private void createOres() {
+        add(ICREBlocks.TIN_ORE.get(), block -> createOreDrop(ICREBlocks.TIN_ORE.get(), ICREItems.RAW_TIN.get()));
+        add(ICREBlocks.DEEPSLATE_TIN_ORE.get(), block -> createOreDrop(ICREBlocks.DEEPSLATE_TIN_ORE.get(), ICREItems.RAW_TIN.get()));
+        add(ICREBlocks.DEEPSLATE_LEAD_ORE.get(), block -> createOreDrop(ICREBlocks.DEEPSLATE_LEAD_ORE.get(), ICREItems.RAW_LEAD.get()));
     }
 
     private void createRubber() {

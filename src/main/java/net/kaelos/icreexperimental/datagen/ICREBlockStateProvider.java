@@ -29,6 +29,30 @@ public class ICREBlockStateProvider extends BlockStateProvider {
                 .forEach(this::cableBlocks);
 
         rubberBlocks();
+        oreBlocks();
+    }
+
+    private void oreBlocks() {
+        // Tin
+        Block tin = ICREBlocks.TIN_ORE.get();
+        String nameTin = BuiltInRegistries.BLOCK.getKey(tin).getPath();
+        ModelFile modelTin = models().cubeAll(nameTin, modLoc("block/material/" + nameTin));
+        simpleBlock(tin, modelTin);
+        simpleBlockItem(tin, modelTin);
+
+        // Deepslate Tin
+        Block deepslateTin = ICREBlocks.DEEPSLATE_TIN_ORE.get();
+        String nameDeepslateTin = BuiltInRegistries.BLOCK.getKey(deepslateTin).getPath();
+        ModelFile modelDeepslateTin = models().cubeAll(nameDeepslateTin, modLoc("block/material/" + nameDeepslateTin));
+        simpleBlock(deepslateTin, modelDeepslateTin);
+        simpleBlockItem(deepslateTin, modelDeepslateTin);
+
+        // Deepslate Lead
+        Block deepslateLead = ICREBlocks.DEEPSLATE_LEAD_ORE.get();
+        String nameDeepslateLead = BuiltInRegistries.BLOCK.getKey(deepslateLead).getPath();
+        ModelFile modelDeepslateLead = models().cubeAll(nameDeepslateLead, modLoc("block/material/" + nameDeepslateLead));
+        simpleBlock(deepslateLead, modelDeepslateLead);
+        simpleBlockItem(deepslateLead, modelDeepslateLead);
     }
 
     private void rubberBlocks() {

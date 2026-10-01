@@ -2,6 +2,7 @@ package net.kaelos.icreexperimental.definitions;
 
 import net.kaelos.icreexperimental.ICRE;
 import net.kaelos.icreexperimental.block.CableBlock;
+import net.kaelos.icreexperimental.block.OreBlock;
 import net.kaelos.icreexperimental.init.IAgricultureComponent;
 import net.kaelos.icreexperimental.item.MaterialItem;
 import net.kaelos.icreexperimental.item.ToolItem;
@@ -27,6 +28,11 @@ public class ICRECreativeModeTabs {
                         ICREItems.ITEMS.getEntries().stream()
                                 .map(DeferredHolder::get)
                                 .filter(item -> item instanceof MaterialItem)
+                                .forEach(output::accept);
+
+                        ICREBlocks.BLOCKS.getEntries().stream()
+                                .map(DeferredHolder::get)
+                                .filter(block -> block instanceof OreBlock)
                                 .forEach(output::accept);
 
                         ICREBlocks.BLOCKS.getEntries().stream()

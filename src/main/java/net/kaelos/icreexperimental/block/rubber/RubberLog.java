@@ -2,11 +2,11 @@ package net.kaelos.icreexperimental.block.rubber;
 
 import net.kaelos.icreexperimental.block.ICREBlockBase;
 import net.kaelos.icreexperimental.definitions.ICREItems;
+import net.kaelos.icreexperimental.definitions.ICRESounds;
 import net.kaelos.icreexperimental.init.IAgricultureComponent;
 import net.kaelos.icreexperimental.item.tool.FaucetTool;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
@@ -120,7 +120,7 @@ public class RubberLog extends ICREBlockBase implements IAgricultureComponent {
                     stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(hand));
                 }
 
-                level.playSound(player, pos, SoundEvents.AXE_STRIP, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound(player, pos, ICRESounds.FAUCET_EXTRACT.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
 
                 return ItemInteractionResult.sidedSuccess(level.isClientSide());
             }
